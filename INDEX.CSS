@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+.list{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+    transition:all 0.5s ease 0s;
+}
+.ld1{
+    color: aliceblue;
+    text-align: center;
+}
+.one:hover{
+    transform:rotate(4deg) scale(1.2,1.2);
+}
+.two:hover{
+    transform:rotate(-4deg) scale(1.2,1.2);
+}
+.three:hover{
+    transform:rotate(3deg) scale(1.2,1.2);
+}
+.four:hover{
+    transform:rotate(-6deg) scale(1.2,1.2);
+}
+.list:hover .item{
+    filter: sepia(100%) hue-rotate(-50deg) saturate(500%) brightness(130%) blur(10px);
+}
+.list:hover .item:hover{
+    filter:none;
+}
+
+/* .list:hover .item:not(:hover){
+    filter: grayscale(1) blur(10px);
+} */
+@media(max-width:1300px){
+    .list{
+        flex-wrap: wrap;
+    }
+}
