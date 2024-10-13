@@ -12,7 +12,8 @@ body{
     transition:all 0.5s ease 0s;
 }
 .ld1{
-    color: aliceblue;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
 .one:hover{
